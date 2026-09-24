@@ -5344,3 +5344,10 @@
         height: auto !important;
     }
 }
+
+/* Desktop/tablet: override every earlier breakpoint-specific .header-con
+   padding rule (20px/18px/14px/12px/10px) with one short, final value. */
+.home .header-con,
+.header-con {
+    padding: 4px 0;
+}

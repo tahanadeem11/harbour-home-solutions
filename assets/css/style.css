@@ -2156,14 +2156,43 @@ body {
 
 /* BANNER SECTION */
 .banner-con {
-    background-image: linear-gradient(100deg, rgba(1, 44, 95, 0.88) 0%, rgba(1, 44, 95, 0.65) 42%, rgba(1, 44, 95, 0.35) 75%, rgba(1, 44, 95, 0.25) 100%), url(../images/hero-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #012c5f;
     overflow: hidden;
     min-height: 720px;
     display: flex;
     align-items: center;
+}
+
+.hero-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-slideshow-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image: linear-gradient(100deg, rgba(1, 44, 95, 0.88) 0%, rgba(1, 44, 95, 0.65) 42%, rgba(1, 44, 95, 0.35) 75%, rgba(1, 44, 95, 0.25) 100%);
+}
+
+.banner-con .container1417 {
+    position: relative;
+    z-index: 2;
 }
 
 .banner-con .banner-inner-con {
