@@ -5134,11 +5134,11 @@
         margin-right: 8px;
         display: flex;
         align-items: center;
-        height: 56px;
+        height: 64px;
     }
 
     .header-con .navbar-brand img {
-        max-height: 48px;
+        max-height: 56px;
         width: auto;
         height: auto;
         object-fit: contain;
@@ -5227,9 +5227,9 @@
     .header-con .navbar-brand img,
     .header-con .navbar-brand figure img,
     .home .header-con .navbar-brand figure img {
-        max-height: 48px !important;
+        max-height: 64px !important;
         width: auto !important;
-        max-width: 160px !important;
+        max-width: 220px !important;
         height: auto !important;
         object-fit: contain;
     }
@@ -5263,8 +5263,8 @@
     .header-con .navbar-brand img,
     .header-con .navbar-brand figure img,
     .home .header-con .navbar-brand figure img {
-        max-height: 40px !important;
-        max-width: 130px !important;
+        max-height: 56px !important;
+        max-width: 190px !important;
     }
 }
 

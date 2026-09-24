@@ -575,8 +575,12 @@ body {
     padding: 0;
     top: 27px !important;
     border-radius: 5px;
-    width: 205px;
+    width: 320px;
     padding: 10px 0;
+}
+
+.header-con .dropdown-item {
+    white-space: normal;
 }
 
 /* Open the Services dropdown on hover on desktop (in addition to click) */
@@ -2155,16 +2159,19 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-}
-
-.banner-con .container1417 {
-    position: relative;
-    z-index: 2;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
 }
 
 .banner-con .banner-inner-con {
-    padding-top: 211px;
-    padding-bottom: 215px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.banner-con h1 {
+    font-size: 50px;
+    line-height: 58px;
 }
 
 .banner3-con span.welcome-text,
@@ -2341,6 +2348,7 @@ body {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
+    display: flex;
 }
 
 .about-con .about_wrapper .about-image1 {
@@ -2352,7 +2360,8 @@ body {
 .about-con .about_wrapper .about-image1 img {
     border-radius: 20px;
     width: 100%;
-    height: 420px;
+    height: 100%;
+    min-height: 420px;
     object-fit: cover;
     display: block;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
