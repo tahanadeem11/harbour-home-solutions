@@ -5134,11 +5134,11 @@
         margin-right: 8px;
         display: flex;
         align-items: center;
-        height: 64px;
+        height: 72px;
     }
 
     .header-con .navbar-brand img {
-        max-height: 56px;
+        max-height: 72px;
         width: auto;
         height: auto;
         object-fit: contain;
@@ -5151,7 +5151,7 @@
 
     /* slightly reduce header padding so logo appears vertically centered */
     .header-con {
-        padding: 8px 0;
+        padding: 2px 0;
     }
 
     .header-con .header-btn {
@@ -5227,9 +5227,9 @@
     .header-con .navbar-brand img,
     .header-con .navbar-brand figure img,
     .home .header-con .navbar-brand figure img {
-        max-height: 64px !important;
+        max-height: 80px !important;
         width: auto !important;
-        max-width: 220px !important;
+        max-width: 240px !important;
         height: auto !important;
         object-fit: contain;
     }
@@ -5250,7 +5250,7 @@
     }
 
     .header-con {
-        padding: 12px 15px !important;
+        padding: 4px 15px !important;
     }
 
     .home .header-con .header-btn {
@@ -5263,8 +5263,12 @@
     .header-con .navbar-brand img,
     .header-con .navbar-brand figure img,
     .home .header-con .navbar-brand figure img {
-        max-height: 56px !important;
-        max-width: 190px !important;
+        max-height: 68px !important;
+        max-width: 210px !important;
+    }
+
+    .header-con {
+        padding: 2px 12px !important;
     }
 }
 
@@ -5300,5 +5304,43 @@
         width: auto !important;
         margin: 0 !important;
         text-align: left !important;
+    }
+}
+
+/* =========================================================
+   ABSOLUTE FINAL HEADER SIZE FIX (highest priority, end of file)
+   Bigger logo, shorter header padding, on tablet and mobile.
+   ========================================================= */
+@media screen and (max-width: 991px) {
+    .home .header-con,
+    .header-con {
+        padding: 4px 15px !important;
+    }
+
+    .home .header-con .navbar-brand img,
+    .home .header-con .navbar-brand figure img,
+    .header-con .navbar-brand img,
+    .header-con .navbar-brand figure img {
+        max-height: 80px !important;
+        max-width: 240px !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .home .header-con,
+    .header-con {
+        padding: 2px 12px !important;
+    }
+
+    .home .header-con .navbar-brand img,
+    .home .header-con .navbar-brand figure img,
+    .header-con .navbar-brand img,
+    .header-con .navbar-brand figure img {
+        max-height: 68px !important;
+        max-width: 210px !important;
+        width: auto !important;
+        height: auto !important;
     }
 }
